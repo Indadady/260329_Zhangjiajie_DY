@@ -121,9 +121,9 @@
                 justify-content: space-between;
             }
             main { padding: 0 !important; margin: 0 !important; }
-            table { width: 100%; border-collapse: collapse; font-size: 11.5px; } /* 글씨 크기 최적화 */
-            th, td { border: 1px solid #cbd5e1; padding: 6px 8px; }
-            th { background-color: #f1f5f9; font-weight: bold; text-align: center; }
+            table { width: 100%; border-collapse: collapse; } /* 글씨 크기 최적화 (Tailwind 클래스로 제어) */
+            th, td { border: 1px solid #cbd5e1; padding: 10px 12px; } /* 패딩 대폭 증가 */
+            th { background-color: #f1f5f9; font-weight: bold; text-align: center; font-size: 15px; } /* 헤더 폰트 확대 */
         }
     </style>
 </head>
@@ -156,13 +156,13 @@
              A4 인쇄 전용 레이아웃 (웹에서는 숨김 처리)
              ========================================== -->
         <div class="print-only hidden w-full font-sans">
-            <div class="border-b-2 border-slate-800 pb-3 mb-3 flex justify-between items-end">
+            <div class="border-b-2 border-slate-800 pb-4 mb-4 flex justify-between items-end">
                 <div>
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-5 mb-2">
-                    <h1 class="text-2xl font-bold text-slate-900">청주-장가계 직항 3박 4일 VIP 단독투어</h1>
-                    <p class="text-slate-600 font-medium mt-1 text-sm">기사/가이드 경비 포함 / 노옵션 / 쇼핑 2회 / 블루베이호텔 5성급</p>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHfgIX70O5k6Anuo0UgALIdaG9jSga9auHu3uyz0uEirylGPAJnjN_qQbvEGMUvPqUQf_g9FMNUHRxlDcUBf4vZ3Mpy4TnA9WxbmzWYK11gt2zuy_Irl4wctNFjcjLyPo0GPXV792o_J7L9guRMuDfeC1gy7USwywjYbECZgzcsHybuGRRAXAnO1eNmP8/s320/logo.png" alt="Tourmaker" class="h-6 mb-2">
+                    <h1 class="text-3xl font-bold text-slate-900">청주-장가계 직항 3박 4일 VIP 단독투어</h1>
+                    <p class="text-slate-600 font-medium mt-2 text-base">기사/가이드 경비 포함 / 노옵션 / 쇼핑 2회 / 블루베이호텔 5성급</p>
                 </div>
-                <div class="text-right text-xs text-slate-600 space-y-0.5">
+                <div class="text-right text-sm text-slate-600 space-y-1">
                     <p><strong>일정:</strong> 2026.03.29 (일) ~ 04.01 (수)</p>
                     <p><strong>항공:</strong> 이스타항공 (ZE751/ZE752)</p>
                     <p><strong>인원:</strong> 12+1명 (24인승 리무진 버스)</p>
@@ -171,7 +171,7 @@
             </div>
 
             <!-- 핵심 조건 요약 -->
-            <div class="grid grid-cols-4 gap-2 mb-3 text-center text-xs font-bold border border-slate-300 bg-slate-50 p-2 rounded">
+            <div class="grid grid-cols-4 gap-3 mb-4 text-center text-sm font-bold border border-slate-300 bg-slate-50 p-3 rounded">
                 <div class="text-indigo-700"><i class="fa-solid fa-plane"></i> 청주 오전 출발 (꽉찬 일정)</div>
                 <div class="text-emerald-700"><i class="fa-solid fa-coins"></i> 기사/가이드 팁 포함</div>
                 <div class="text-blue-700"><i class="fa-solid fa-ban"></i> 노옵션 (부담 없는 행사)</div>
@@ -179,22 +179,22 @@
             </div>
 
             <!-- 일자별 일정표 테이블 -->
-            <table class="w-full" style="flex-grow: 1; height: 100%;">
+            <table class="w-full text-sm" style="flex-grow: 1; height: 100%;">
                 <thead>
                     <tr>
                         <th class="w-[8%]">일자</th>
                         <th class="w-[10%]">지역</th>
-                        <th class="w-[70%] text-left px-2">상세 일정 및 관광지</th>
+                        <th class="w-[70%] text-left px-3">상세 일정 및 관광지</th>
                         <th class="w-[12%]">식사</th>
                     </tr>
                 </thead>
                 <tbody class="align-top">
                     <!-- Day 1 -->
                     <tr>
-                        <td class="text-center font-bold">1일차<br><span class="text-[10px] font-normal text-slate-500">3/29(일)</span></td>
-                        <td class="text-center text-xs pt-2">청주<br>✈<br>장가계</td>
-                        <td class="px-3 py-2">
-                            <ul class="list-disc pl-4 space-y-1 mb-2 text-xs">
+                        <td class="text-center font-bold text-base">1일차<br><span class="text-xs font-normal text-slate-500">3/29(일)</span></td>
+                        <td class="text-center text-sm pt-3">청주<br>✈<br>장가계</td>
+                        <td class="px-4 py-3">
+                            <ul class="list-disc pl-5 space-y-1.5 mb-3 text-sm">
                                 <li><strong>[09:00]</strong> 청주국제공항 1층 여행사 카운터 앞 집결</li>
                                 <li><strong>[11:30]</strong> 청주 출발 (이스타항공 ZE751)</li>
                                 <li><strong>[13:40]</strong> 장가계 공항 도착 후 가이드 미팅 (피켓: 투어메이커-정두영)</li>
@@ -202,11 +202,11 @@
                                 <li>[유리다리 편도 + 엘리베이터 + 봅슬레이 + 트레킹하산 + 유람선편도]</li>
                                 <li>석식 후 호텔 투숙 및 휴식</li>
                             </ul>
-                            <div class="mt-2 text-[10px] text-slate-600 bg-slate-50 p-1.5 rounded">
+                            <div class="mt-3 text-xs text-slate-600 bg-slate-50 p-2 rounded border border-slate-200">
                                 🏨 <strong>숙박:</strong> 블루베이 호텔 (5성급) / TEL: 0744-883-7777
                             </div>
                         </td>
-                        <td class="text-center text-xs leading-relaxed py-2">
+                        <td class="text-center text-sm leading-loose py-3">
                             <p class="text-slate-400">[조] 불포함</p>
                             <p class="text-slate-800">[중] 김밥/과일</p>
                             <p class="font-bold text-indigo-700">[석] 버섯샤브</p>
@@ -214,10 +214,10 @@
                     </tr>
                     <!-- Day 2 -->
                     <tr>
-                        <td class="text-center font-bold">2일차<br><span class="text-[10px] font-normal text-slate-500">3/30(월)</span></td>
-                        <td class="text-center text-xs pt-2">장가계<br>보봉호수<br>천자산<br>원가계</td>
-                        <td class="px-3 py-2">
-                            <ul class="list-disc pl-4 space-y-1 mb-2 text-xs">
+                        <td class="text-center font-bold text-base">2일차<br><span class="text-xs font-normal text-slate-500">3/30(월)</span></td>
+                        <td class="text-center text-sm pt-3">장가계<br>보봉호수<br>천자산<br>원가계</td>
+                        <td class="px-4 py-3">
+                            <ul class="list-disc pl-5 space-y-1.5 mb-3 text-sm">
                                 <li>호텔 조식 후 무릉원으로 이동</li>
                                 <li>반자연, 반인공의 거대한 호수 <strong>보봉호수 (VIP코스)</strong></li>
                                 <li>산세가 기이하고 수려한 <strong>천자산 등정 (케이블카 편도)</strong></li>
@@ -230,7 +230,7 @@
                                 <li>석식 후 <strong>72기루(외관관광)</strong>, 호텔 투숙 및 휴식</li>
                             </ul>
                         </td>
-                        <td class="text-center text-xs leading-relaxed py-2">
+                        <td class="text-center text-sm leading-loose py-3">
                             <p>[조] 호텔식</p>
                             <p class="font-bold text-slate-800">[중] 불고기</p>
                             <p class="font-bold text-orange-700">[석] 삼겹살<br>(무제한)</p>
@@ -238,10 +238,10 @@
                     </tr>
                     <!-- Day 3 -->
                     <tr>
-                        <td class="text-center font-bold">3일차<br><span class="text-[10px] font-normal text-slate-500">3/31(화)</span></td>
-                        <td class="text-center text-xs pt-2">장가계<br>황룡동굴<br>천문산</td>
-                        <td class="px-3 py-2">
-                            <ul class="list-disc pl-4 space-y-1 mb-2 text-xs">
+                        <td class="text-center font-bold text-base">3일차<br><span class="text-xs font-normal text-slate-500">3/31(화)</span></td>
+                        <td class="text-center text-sm pt-3">장가계<br>황룡동굴<br>천문산</td>
+                        <td class="px-4 py-3">
+                            <ul class="list-disc pl-5 space-y-1.5 mb-3 text-sm">
                                 <li>호텔 조식 후 환상적인 지하비경 <strong>황룡동굴</strong> 관광</li>
                                 <li>장가계 시내로 이동 (약 1시간)</li>
                                 <li>장가계의 혼, <strong>천문산 등정 (케이블카 35분 이동)</strong></li>
@@ -251,7 +251,7 @@
                                 <li>석식 후 호텔 투숙 및 휴식</li>
                             </ul>
                         </td>
-                        <td class="text-center text-xs leading-relaxed py-2">
+                        <td class="text-center text-sm leading-loose py-3">
                             <p>[조] 호텔식</p>
                             <p class="font-bold text-slate-800">[중] 보쌈정식</p>
                             <p class="font-bold text-rose-700">[석] 궁중요리</p>
@@ -259,10 +259,10 @@
                     </tr>
                     <!-- Day 4 -->
                     <tr>
-                        <td class="text-center font-bold">4일차<br><span class="text-[10px] font-normal text-slate-500">4/1(수)</span></td>
-                        <td class="text-center text-xs pt-2">장가계<br>✈<br>청주</td>
-                        <td class="px-3 py-2">
-                            <ul class="list-disc pl-4 space-y-1 text-xs">
+                        <td class="text-center font-bold text-base">4일차<br><span class="text-xs font-normal text-slate-500">4/1(수)</span></td>
+                        <td class="text-center text-sm pt-3">장가계<br>✈<br>청주</td>
+                        <td class="px-4 py-3">
+                            <ul class="list-disc pl-5 space-y-1.5 text-sm">
                                 <li>호텔 조식 후 체크아웃</li>
                                 <li>장가계의 역사와 문화를 엿보는 <strong>장가계 민속박물관</strong> 관광</li>
                                 <li>장가계 공항으로 이동 및 출국 수속</li>
@@ -270,7 +270,7 @@
                                 <li><strong>[18:35]</strong> 청주 국제공항 도착 및 해산</li>
                             </ul>
                         </td>
-                        <td class="text-center text-xs leading-relaxed py-2">
+                        <td class="text-center text-sm leading-loose py-3">
                             <p>[조] 호텔식</p>
                             <p class="font-bold text-slate-800">[중] 누룽지백숙</p>
                             <p class="text-slate-400">[석] 불포함</p>
@@ -279,7 +279,7 @@
                 </tbody>
             </table>
             
-            <div class="text-[10px] text-slate-500 text-center mt-2 font-medium pb-2">
+            <div class="text-xs text-slate-500 text-center mt-4 font-medium pb-2">
                 * 상기 일정은 항공 및 현지 사정에 따라 다소 변경될 수 있습니다.<br>
                 <strong>[System Powered by TOURMAKER] 본 스마트 가이드북은 투어메이커의 기획과 트래블 테크 기술로 제작되었습니다.</strong>
             </div>
