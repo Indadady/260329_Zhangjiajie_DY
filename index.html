@@ -39,7 +39,7 @@
             word-break: keep-all; 
         }
         
-        /* Hero Background - 새로운 배경 이미지 반영 */
+        /* Hero Background */
         .hero-bg-zjj { 
             background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1561031454-4f1331bd2a34?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
@@ -121,9 +121,9 @@
                 justify-content: space-between;
             }
             main { padding: 0 !important; margin: 0 !important; }
-            table { width: 100%; border-collapse: collapse; } /* 글씨 크기 최적화 (Tailwind 클래스로 제어) */
-            th, td { border: 1px solid #cbd5e1; padding: 10px 12px; } /* 패딩 대폭 증가 */
-            th { background-color: #f1f5f9; font-weight: bold; text-align: center; font-size: 15px; } /* 헤더 폰트 확대 */
+            table { width: 100%; border-collapse: collapse; }
+            th, td { border: 1px solid #cbd5e1; padding: 10px 12px; }
+            th { background-color: #f1f5f9; font-weight: bold; text-align: center; font-size: 15px; }
         }
     </style>
 </head>
@@ -195,9 +195,9 @@
                         <td class="text-center text-sm pt-3">청주<br>✈<br>장가계</td>
                         <td class="px-4 py-3">
                             <ul class="list-disc pl-5 space-y-1.5 mb-3 text-sm">
-                                <li><strong>[09:00]</strong> 청주국제공항 1층 여행사 카운터 앞 집결</li>
+                                <li><strong>[08:30]</strong> 청주공항 1층 3번게이트 앞 A카운터 집결 (담당: 윤경홍 010-3061-9944)</li>
                                 <li><strong>[11:30]</strong> 청주 출발 (이스타항공 ZE751)</li>
-                                <li><strong>[13:40]</strong> 장가계 공항 도착 후 가이드 미팅 (피켓: 투어메이커-정두영)</li>
+                                <li><strong>[13:40]</strong> 장가계 공항 도착 후 가이드 미팅 (담당: 조영송 가이드)</li>
                                 <li class="text-emerald-700 font-bold">★ [특전] 대자연의 신비, 대협곡+유리다리 (B코스)</li>
                                 <li>[유리다리 편도 + 엘리베이터 + 봅슬레이 + 트레킹하산 + 유람선편도]</li>
                                 <li>석식 후 호텔 투숙 및 휴식</li>
@@ -425,10 +425,10 @@
                             <div class="timeline-item">
                                 <div class="timeline-dot"></div>
                                 <div class="flex flex-col md:flex-row md:items-start gap-1 md:gap-4">
-                                    <span class="text-sm font-bold text-sky-600 w-20 pt-1">09:00</span>
+                                    <span class="text-sm font-bold text-sky-600 w-20 pt-1">08:30</span>
                                     <div class="flex-1">
                                         <h4 class="font-bold text-slate-800 text-lg">청주공항 집결 및 출국 수속</h4>
-                                        <p class="text-slate-600 text-sm mt-1">청주국제공항 1층 여행사 카운터 앞 미팅</p>
+                                        <p class="text-slate-600 text-sm mt-1">청주공항 1층 3번게이트 들어가서 A카운터 앞 미팅 <br><span class="font-bold text-indigo-600">[미팅담당자: 윤경홍 010-3061-9944]</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -448,7 +448,7 @@
                                     <span class="text-sm font-bold text-emerald-600 w-20 pt-1">13:40</span>
                                     <div class="flex-1">
                                         <h4 class="font-bold text-slate-800 text-lg">장가계 공항 도착</h4>
-                                        <p class="text-slate-600 text-sm mt-1">입국 수속 후 현지 가이드 미팅 (피켓: 투어메이커-정두영)</p>
+                                        <p class="text-slate-600 text-sm mt-1">입국 수속 후 현지 가이드 미팅 (피켓: 투어메이커 / 담당: 조영송 가이드)</p>
                                     </div>
                                 </div>
                             </div>
@@ -712,7 +712,7 @@
                             </div>
                         </div>
 
-                        <!-- 기온 기반 옷차림 추천 영역 (신규 추가) -->
+                        <!-- 기온 기반 옷차림 추천 영역 -->
                         <div id="clothing-rec-container" class="relative z-10 bg-white/20 rounded-lg p-2.5 mb-4 backdrop-blur-sm border border-white/20 text-[11px] font-medium text-white flex items-start gap-2 shadow-sm">
                             <i id="clothing-icon" class="fa-solid fa-shirt text-sky-200 mt-0.5 text-base"></i>
                             <span id="clothing-desc" class="leading-snug">현지 기온을 분석하여 추천 옷차림을 알려드립니다.</span>
@@ -807,10 +807,10 @@
                                     </div>
                                 </div>
                                 <div class="bg-emerald-50 border border-emerald-100 p-4 rounded-2xl">
-                                    <p class="text-emerald-800 text-xs mb-1 font-bold">현지 담당 가이드</p>
+                                    <p class="text-emerald-800 text-xs mb-1 font-bold">현지 담당 가이드 (赵永松)</p>
                                     <div class="flex justify-between items-center">
-                                        <span class="font-bold text-slate-800 text-base">배정 대기중</span>
-                                        <span class="text-slate-500 text-sm">출발 전 개별 안내</span>
+                                        <span class="font-bold text-slate-800 text-base">조영송 가이드 (남)</span>
+                                        <a href="tel:+8618569197737" class="font-bold text-emerald-600 text-sm hover:underline">185-6919-7737</a>
                                     </div>
                                 </div>
                             </div>
@@ -855,7 +855,7 @@
             <div class="border-t border-slate-200/60 pt-6">
                 <p style="font-size: 12px; color: #6c757d; text-align: center; font-weight: 500; margin: 0; padding: 5px 0;">
                     [System Powered by TOURMAKER]<br class="md:hidden"> 
-                    본 스마트 가이드북은 **투어메이커**의 기획과 <a href="https://tourmaker.kr" target="_blank" style="font-weight: bold; text-decoration: underline; color: #6c757d;">투어메이커</a>의 트래블 테크 기술 제휴로 제작되었습니다.
+                    본 스마트 가이드북은 <a href="https://tourmaker.kr" target="_blank" style="font-weight: bold; text-decoration: underline; color: #6c757d;">투어메이커</a>의 기획과 트래블 테크 기술 제휴로 제작되었습니다.
                 </p>
                 <p style="font-size: 10px; color: #adb5bd; text-align: center; margin: 0;">&copy; 2026 Tourmaker. All Rights Reserved.</p>
             </div>
